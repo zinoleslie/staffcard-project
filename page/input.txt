@@ -1,0 +1,80 @@
+let staffbox = document.getElementById("ID-CARD");
+
+//function
+function idbox() {
+// create a loop
+for(i = 0; i < staffElem.length;i++); 
+ 
+//create div inside
+let boxcard = document.createElement("div");
+boxcard.setAttribute("class","deCARD");
+
+// create a box to separate the inside 
+separator = document.createElement("div");
+separator.setAttribute("class","seprator");
+boxcard.appendChild(separator);
+
+
+//create the company name  and append to seprator
+let Companyname= document.createElement("h2");
+ Companyname.setAttribute("class","style-1");
+Companyname.innerHTML= "GoMYCode"
+separator.appendChild(Companyname);
+
+
+
+//create another box to hold the image and info
+let information = document.createElement("div");
+information.setAttribute("class","contentcrd");
+boxcard.appendChild(information);
+
+//create image part
+let profilepic = document.createElement('img');
+// profilepic.setAttribute("class","picframe");
+profilepic.src = staffElem[i].picture;
+information.appendChild(profilepic);
+
+//adding the position
+let post = document.createElement("h3")
+post.innerHTML = staffElem[i].position;
+post.setAttribute("class","text-2");
+information.appendChild(post);
+
+//craete and append name 
+
+let profilname= document.createElement("h3");
+profilname.innerHTML= staffElem[i].Name;
+profilname.setAttribute("class","text-2");
+information.appendChild(profilname);
+
+//date of birth
+
+let profileDate = document.createElement("h3");
+profileDate.innerHTML= staffElem[i].dob;
+profileDate.setAttribute("class","text-2");
+information.appendChild(profileDate);
+
+//create and append the id number
+let staffid = document.createElement("h3");
+staffid.innerHTML = staffElem[i].IDnumber;
+staffid.setAttribute("class","text-2");
+information.appendChild(staffid);
+
+let bottombox = document.createElement("div");
+bottombox.setAttribute("class","bttom");
+boxcard.appendChild(bottombox);
+
+let forms = document.getElementById("infobox");
+
+staffbox.appendChild(boxcard);
+}
+
+idbox()
+
+
+
+
+function addToArray(e) {
+    // e.prevent
+    // Name: forms.profilename.value,
+}
