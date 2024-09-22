@@ -130,3 +130,14 @@ newcard.addEventListener("submit", function(event) {
     console.log(staffElem);
 }
 );
+
+
+
+
+
+
+   let newobj= {
+      profilename: formcard.profilenames.value,
+      position: formcard.position.value,
+      dob: formcard.dob.value,
+      IDnumber: formcard.IDnumber.value,}
