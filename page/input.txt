@@ -78,3 +78,55 @@ function addToArray(e) {
     // e.prevent
     // Name: forms.profilename.value,
 }
+
+
+
+
+
+
+
+
+
+
+function pushToArray(e) {
+  e.preventDefault();
+  console.log("form submit")
+  const newObj =  {
+    // image: "https://example.com/images/staff2.jpg",
+    name: newForm.name.value,
+    position: newForm.position.value,
+    id: newForm.idNumber.value,
+    joinDate: newForm.joinDate.value,
+    expirationDate: newForm.expDate.value,
+    bloodGroup: newForm.blood.value
+
+  }
+  console.log(newObj)
+  staffDatabase.push(newObj)
+  console.log(staffDatabase)
+
+  
+}
+
+
+
+
+
+
+
+let newcard = document.getElementById("btn");
+newcard.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+
+    const newOBJ = {
+        Name: infobox.profilname.value,
+        dob: infobox.datebirth.value,
+        position: infobox.profileposition.value,
+        picImage: infobox.imagepic.value,
+        IDnumber: infobox.profileID.value,
+    }
+    staffElem.push(newOBJ);
+    console.log(staffElem);
+}
+);
