@@ -88,6 +88,12 @@ for(i = 0; i < formStorage.length; i++) {
    let footercard = document.createElement("div");
    footercard.setAttribute("class","bttom");
    boxcard.appendChild(footercard);
+
+   //
+   let footertext = document.createElement("h5");
+   footertext.innerHTML="copyright @2016 'gomycode'";
+   footertext.setAttribute("class","foottext")
+   footercard.appendChild(footertext);
 }
 }
 

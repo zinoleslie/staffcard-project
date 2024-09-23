@@ -156,3 +156,10 @@ button{
     margin-left: 400px;
     background-color:rgb(0, 0, 0);
 }
+
+.foottext {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding-top: 20px;
+}
